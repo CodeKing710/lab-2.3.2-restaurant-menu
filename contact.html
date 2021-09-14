@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link 
+    rel="stylesheet" 
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+    crossorigin="anonymous"/>
+</head>
+<body>
+    <!-- CONTACT PAGE -->
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./menu.html">Menu</a>
+        <a href="./about.html">About</a>
+        <a href="javascript:void(0);">Contact</a>
+        <script>
+            "use strict";
+            var nav_children = document.getElementById('nav').childNodes;
+
+            for(var i = 0; i < nav_children.length; i++) {
+                nav_children[i].setAttribute('width',`${100/nav_children.length}%`);
+            }
+        </script>
+    </nav>
+    <header>
+        <img id="banner" src="assets/images/banner.png" alt="H-Thai-ML Logo" />
+    </header>
+    <main>
+        <h2>Hours of Operation</h2>
+        <p>
+            <strong>Monday-Friday:</strong> 11:00am-8:30pm
+        </p>
+        <p>
+            <strong>Saturday-Sunday:</strong> 1:00pm-10:00pm
+        </p>
+        <h2>Contact Info</h2>
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <p>
+            <strong>Phone Number:</strong> (920)987-4321
+        </p>
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <p>
+            <address><strong>Address:</strong> 9999 Jackson Street, Eau Claire, WI, 76219-5527</address>
+        </p>
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <p>
+            <strong>Email:</strong> coderules2147483674@python.net
+        </p>
+    </main>
+</body>
+</html>

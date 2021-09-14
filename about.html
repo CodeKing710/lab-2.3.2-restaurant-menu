@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+</head>
+<body>
+    <!-- ABOUT PAGE -->
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./menu.html">Menu</a>
+        <a href="javascript:void(0);">About</a>
+        <a href="./contact.html">Contact</a>
+        <script>
+            "use strict";
+            var nav_children = document.getElementById('nav').childNodes;
+
+            for(var i = 0; i < nav_children.length; i++) {
+                nav_children[i].setAttribute('width',`${100/nav_children.length}%`);
+            }
+        </script>
+    </nav>
+    <header>
+        <img id="banner" src="assets/images/banner.png" alt="H-Thai-ML Logo" />
+    </header>
+    <main>
+        <h1>About Us</h1>
+        <h2>Locations</h2>
+        <ul style="list-style: none;">
+            <li>Oshkosh</li>
+            <li>Madison</li>
+            <li>Milwaukee</li>
+            <li>Grand Rapids</li>
+        </ul>
+        <h2>Origin Story</h2>
+        <img src="assets/images/about.jpg" alt="Spices We Use to Make Good Food" />
+        <p>Started making Thai food in the midwest many years ago and decided to setup shop in Grand Rapids, not a huge place but I'd make do. From there we blossomed and now we have hundreds of customers a day enjoying our food.</p>
+    </main>
+</body>
+</html>
